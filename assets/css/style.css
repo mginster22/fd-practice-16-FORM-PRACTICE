@@ -1,0 +1,122 @@
+:root {
+    --main-color: rgb(47, 209, 47);
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(blue, yellow);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: gray;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 3%;
+    border-color: rgba(128, 128, 128, 0.404);
+    transition: all .3s;
+}
+
+input:focus {
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+
+form {
+    width: 100%;
+}
+
+.form {
+    width: 400px;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register {
+    display: block;
+}
+
+.title {
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.title::after,
+.title::before {
+    content: '';
+    display: block;
+    width: 28%;
+    height: 2px;
+    position: absolute;
+    bottom: 15px;
+    background-color: rgba(128, 128, 128, 0.514);
+}
+
+.title::after {
+    left: 255px;
+}
+
+.title::before {
+    left: 2px;
+}
+
+.title-text {
+    padding: 25px 0;
+    font-size: 15px;
+    color: gray;
+    text-align: start;
+}
+
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name>input {
+    width: 47%;
+}
+
+.checkbox-link {
+    color: var(--main-color);
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    transform: translateY(2px);
+}
+
+.submit {
+    width: 100%;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+}
+
+.footer {
+    margin-top: 15px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: underline;
+}
+::selection{
+    color:blue;
+}

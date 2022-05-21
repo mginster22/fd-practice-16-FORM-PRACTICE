@@ -4,6 +4,7 @@
 }
 
 body {
+    height: 100vh;
     background: linear-gradient(blue, yellow);
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,18 +25,17 @@ input:focus {
     border-radius: 10px;
 }
 
-form {
-    width: 100%;
-}
 
 .form {
-    width: 400px;
-    min-width: 300px;
+    max-width: 400px;
+    min-width: 200px;
     margin: auto;
     margin-top: 100px;
     padding: 20px;
     border-radius: 10px;
     background-color: aliceblue;
+    
+    
 }
 
 .flex-parent {
@@ -58,7 +58,7 @@ form {
 .title::after,
 .title::before {
     content: '';
-    display: block;
+    display: inline-block;
     width: 28%;
     height: 2px;
     position: absolute;
@@ -112,6 +112,7 @@ input[type="checkbox"] {
     margin-top: 15px;
     padding-bottom: 40px;
     text-align: center;
+    color:rgb(75, 74, 74);
 }
 
 .footer-link {
